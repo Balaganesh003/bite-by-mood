@@ -33,30 +33,39 @@ export function Home() {
 
     </header>
     <main>
-      <section
-        id = 'hero'
-        className="w-full py-12 md:py-24 lg:py-32  bg-gradient-to-r from-[#FFF5E6] to-[#FFF1D9] !important">
-        <div className="container px-4 md:px-6 !important">
-          <div className="flex flex-col justify-center space-y-4 !important">
-            <div className="space-y-2 !important">
-              <h1
-                className="text-5xl font-bold tracking-tighter sm:text-6xl xl:text-7xl/none !important">
-                Bite by Mood
-              </h1>
-              <p className="max-w-[600px] text-gray-500 md:text-xl !important">
-                Find the perfect meal for your mood with our personalized food recommendations.
-              </p>
-            </div>
-            <div className="flex flex-col gap-2 min-[400px]:flex-row !important">
-              <Link
-                className="inline-flex h-10 items-center justify-center rounded-md bg-[#FF6B6B] px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-[#FF6B6B]/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#FF6B6B] disabled:pointer-events-none disabled:opacity-50 !important"
-                href="/describe">
-                Get Started
-              </Link>
-            </div>
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-[#FFF5E6] to-[#FFF1D9] relative">
+      <div className="container px-4 md:px-6">
+        <div className="flex flex-col items-center justify-center space-y-8 text-center">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-gray-800">
+            <span className=" text-gray-400">🍽</span> Bite by Mood 🍔
+          </h1>
+          <p className="max-w-lg text-gray-600 text-lg md:text-xl">
+            Find the perfect meal for your mood with our personalized food recommendations.
+          </p>
+          <div className="flex gap-4">
+            <Link
+              href="/describe"
+              className="inline-block px-8 py-3 text-lg font-medium text-white bg-[#FF6B6B] rounded-md shadow hover:bg-[#FF5A5A] focus:outline-none focus:ring-2 focus:ring-[#FF6B6B]"
+            >
+              Get Started
+            </Link>
           </div>
         </div>
-      </section>
+
+          <span className="text-6xl  absolute top-5 left-[8rem]">🍕</span>
+          <span className="text-5xl absolute top-[10rem] left-5 ">🍔</span>
+          <span className="text-4xl absolute top-[13rem] left-[12rem]">🍜</span>
+
+          <span className="text-4xl absolute bottom-[5rem] left-[9rem] ">🍣</span>
+          <span className="text-5xl absolute bottom-[11rem] left-[20rem]">🍩</span>
+          <span className="text-4xl absolute bottom-[11rem] right-[20rem]">🍦</span>
+          <span className="text-6xl absolute bottom-[5rem] right-[9rem]">🍕</span>
+          <span className="text-4xl absolute top-[13rem] right-[12rem]">🍔</span>
+          <span className="text-5xl absolute top-[10rem] right-5">🍜</span>
+          <span className="text-6xl absolute top-5 right-[8rem]">🍴</span>
+
+      </div>
+    </section>
       <section id='howitworks' className="w-full py-12 md:py-24 lg:py-32 !important">
         <div className="container px-4 md:px-6 !important">
           <div className="space-y-4 text-center !important">
